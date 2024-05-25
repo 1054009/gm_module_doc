@@ -129,3 +129,58 @@ Same as _G.debug.getinfo
 Same as _G.debug.getmetatable
 
 </details>
+
+<details>
+<summary>Net Lib (_G.proxi.net)</summary>
+
+`bool Start(string MessageName)` \
+Same as _G.net.Start
+
+`SendToServer()` \
+Same as _G.net.SendToServer
+
+`string NetworkIDToString(number ID)` \
+Same as _G.util.NetworkIDToString
+
+`number NetworkStringToID(string NetworkString)` \
+Same as _G.util.NetworkStringToID
+
+`WriteBit(bool Value)` \
+Same as _G.net.WriteBit
+
+`WriteBool(bool Value)` \
+Same as _G.net.WriteBool
+
+`WriteColor(table Color, bool WriteAlpha)` \
+Same as _G.net.WriteColor
+
+`WriteFloat(number Value)` \
+Same as _G.net.WriteFloat
+
+`WriteInt(number Value, number BitCount)` \
+Same as _G.net.WriteInt
+
+`WriteUInt(number Value, number BitCount)` \
+Same as _G.net.WriteUInt
+
+`WriteString(string Value)` \
+Same as _G.net.WriteString
+
+`WriteEntity(Entity Entity)` \
+Same as _G.net.WriteEntity
+
+`WriteVector(Vector Vector)` \
+Same as _G.net.WriteVector
+
+`WriteNormal(Vector Normal)` \
+Same as _G.net.WriteVector \
+Does not normalize the Vector
+
+`WriteAngle(Angle Angle)` \
+Same as _G.net.WriteAngle
+
+`WriteMatrix(VMatrix Matrix)` \
+Same as _G.net.WriteMatrix \
+Temporarily disabled, does not write anything
+
+</details>
