@@ -213,3 +213,52 @@ Sets a data entry on the entity's network variable datatable to the given value
 Sets whether or not this entity should be interpolated
 
 </details>
+
+<details>
+<summary>CUserCmd Additions</summary>
+
+`bool GetInWorldClicker()` \
+Returns if the command is using world clicker
+
+`SetInWorldClicker(bool WorldClicker)` \
+Sets whether or not the command is using world clicker
+
+`Vector GetWorldClickerAngles()` \
+Returns the world clicking direction of the command
+
+`SetWorldClickerAngles(Vector Angles)` \
+Sets the world clicking direction of the command
+
+`SetCommandNumber(number CommandNumber)` \
+Sets the command number on the command
+
+`SetTickCount(number TickCount)` \
+Sets the tick count on the command
+
+`number GetRandomSeed()` \
+Returns the random seed of the command
+
+`SetRandomSeed(number RandomSeed)` \
+Sets the random seed of the command \
+Internally moves command number forward until desired seed is reached
+
+`bool GetIsTyping()` \
+Returns if the command is set to be in the typing (Chatbox open) state
+
+`SetIsTyping(bool Type)` \
+Sets the typing (Chatbox open) state of the command
+
+`bool HasBeenPredicted()` \
+Returns if the command has already been predicted
+
+`bool IsKeyCodeDown(number KeyCode)` \
+Returns if a key code is being pressed
+
+`AddKeyCode(number KeyCode)` \
+Adds a key code to the command's pressed key list \
+There is a limit of 5 keys being pressed for any given command. If all slots are full, the first slot will be overridden
+
+`RemoveKeyCode(number KeyCode)` \
+Removes a key come from the command's pressed key list
+
+</details>
