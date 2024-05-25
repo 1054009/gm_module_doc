@@ -188,7 +188,7 @@ Temporarily disabled, does not write anything
 
 </details>
 
-### _R.Entity
+### Registry Changes
 
 <details>
 <summary>Entity Additions</summary>
