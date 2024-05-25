@@ -191,7 +191,7 @@ Temporarily disabled, does not write anything
 ### Registry Changes
 
 <details>
-<summary>Entity Additions</summary>
+<summary>Entity</summary>
 
 `any GetDTNetVar(string NetVar, number Force)` \
 Returns a data entry from the entity's network variable datatable \
@@ -215,7 +215,7 @@ Sets whether or not this entity should be interpolated
 </details>
 
 <details>
-<summary>CUserCmd Additions</summary>
+<summary>CUserCmd</summary>
 
 `bool GetInWorldClicker()` \
 Returns if the command is using world clicker
@@ -264,7 +264,7 @@ Removes a key come from the command's pressed key list
 </details>
 
 <details>
-<summary>ConVar Additions</summary>
+<summary>ConVar</summary>
 
 `SendValue(any Value)` \
 Spoofs a convar change event on the server \
