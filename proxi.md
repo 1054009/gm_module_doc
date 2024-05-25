@@ -1,6 +1,9 @@
 # gm_proxi
+
+### _G.proxi
+
 <details>
-<summary>Base Lib (_G.proxi)</summary>
+<summary>Base Lib</summary>
 
 `DEBUG` \
 A boolean representing whether or not the module is in debug mode
@@ -108,7 +111,7 @@ Spoofs _G.FrameTime and _G.RealFrameTime to return the given number until the ne
 </details>
 
 <details>
-<summary>Debug Lib (_G.proxi.debug)</summary>
+<summary>Debug Lib</summary>
 
 `string, any getupvalue(function Function, number Index)` \
 Same as _G.debug.getupvalue
@@ -131,7 +134,7 @@ Same as _G.debug.getmetatable
 </details>
 
 <details>
-<summary>Net Lib (_G.proxi.net)</summary>
+<summary>Net Lib</summary>
 
 `bool Start(string MessageName)` \
 Same as _G.net.Start
