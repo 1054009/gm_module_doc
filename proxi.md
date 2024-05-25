@@ -262,3 +262,39 @@ There is a limit of 5 keys being pressed for any given command. If all slots are
 Removes a key come from the command's pressed key list
 
 </details>
+
+<details>
+<summary>ConVar Additions</summary>
+
+`SendValue(any Value)` \
+Spoofs a convar change event on the server \
+Accepted value types are: `string`, `number`, `bool`, `Angle`, `Vector`
+
+`SetFlags(number Flags)` \
+Force sets the flags on the convar
+
+`ForceHasMin(bool HasMin)` \
+Force whether or not the convar has a minimum value
+
+`ForceHasMax(bool HasMax)` \
+Force whether or not the convar has a maximum value
+
+`ForceMin(number Min)` \
+Forces the minimum value of the convar to the given value
+
+`ForceMax(number Max)` \
+Forces the maximum value of the convar to the given value
+
+`ForceInt(number Integer)` \
+Forces the value of the convar to the given integer
+
+`ForceFloat(number Float)` \
+Forces the value of the convar to the given float
+
+`ForceBool(bool Value)` \
+Forces the value of the convar to the given bool
+
+`ForceString(string Value)` \
+Forces the value of the convar to the given string
+
+</details>
