@@ -12,35 +12,35 @@ A boolean representing whether or not the module is in debug mode
 A reference to the debug registry
 
 `FRAME_UNDEFINED` \
-For use in the FrameStagNotify hooks \
+For use in the FrameStageNotify hooks \
 Value of -1
 
 `FRAME_START` \
-For use in the FrameStagNotify hooks \
+For use in the FrameStageNotify hooks \
 Value of 0
 
 `FRAME_NET_UPDATE_START` \
-For use in the FrameStagNotify hooks \
+For use in the FrameStageNotify hooks \
 Value of 1
 
 `FRAME_NET_UPDATE_POSTDATAUPDATE_START` \
-For use in the FrameStagNotify hooks \
+For use in the FrameStageNotify hooks \
 Value of 2
 
 `FRAME_NET_UPDATE_POSTDATAUPDATE_END` \
-For use in the FrameStagNotify hooks \
+For use in the FrameStageNotify hooks \
 Value of 3
 
 `FRAME_NET_UPDATE_END` \
-For use in the FrameStagNotify hooks \
+For use in the FrameStageNotify hooks \
 Value of 4
 
 `FRAME_RENDER_START` \
-For use in the FrameStagNotify hooks \
+For use in the FrameStageNotify hooks \
 Value of 5
 
 `FRAME_RENDER_END` \
-For use in the FrameStagNotify hooks \
+For use in the FrameStageNotify hooks \
 Value of 6
 
 `DisableAnimInterp(bool Disable)` \
