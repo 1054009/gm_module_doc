@@ -299,6 +299,84 @@ Forces the value of the convar to the given string
 
 </details>
 
+<details>
+<summary>proxi_bf_read</summary>
+
+`Seek(number Location)` \
+Sets the buffer front to the given location
+
+`SeekRelative(number Location)` \
+Sets the buffer front to the given location
+
+`Reset()` \
+Resets the buffer to the beginning
+
+`number GetBitsLeft()` \
+Returns the amount of bits until the end of the buffer
+
+`number GetBytesLeft()` \
+Returns the amount of bytes until the end of the buffer
+
+`number GetBitsRead()` \
+Returns the amount of bits read from the buffer so far
+
+`number GetBytesRead()` \
+Returns the amount of bytes read from the buffer so far
+
+`number GetCurBit()` \
+Returns the current bit index in the buffer
+
+`number ReadBit()` \
+Reads a bit from the buffer
+
+`bool ReadBit()` \
+Reads a bool from the buffer
+
+`number ReadByte()` \
+Reads a byte (8 bits) from the buffer
+
+`number ReadWord()` \
+Reads a word (16 bits) from the buffer
+
+`number ReadFloat()` \
+Reads a float (32 bits) from the buffer
+
+`number ReadDouble()` \
+Reads a double (64 bits) from the buffer
+
+`number ReadInt(number BitCount)` \
+Reads an integer from the buffer
+
+`number ReadUInt(number BitCount)` \
+Reads an unsigned integer from the buffer
+
+`string ReadData(number Length)` \
+Reads a string of Length length from the buffer at 1 byte per character
+
+`string ReadString()` \
+Reads a string from the buffer at a length of 65,356
+
+`Color ReadColor(bool HasAlpha = true)` \
+Reads a Color from the buffer at 8 bits per property
+
+`Vector ReadVector()` \
+Reads a Vector from the buffer
+
+`Vector ReadNormal()` \
+Reads a normalized Vector from the buffer
+
+`Angle ReadAngle()` \
+Reads an Angle from the buffer
+
+`Entity ReadEntity()` \
+Reads an Entity from the buffer (16 bits)
+
+`VMatrix ReadMatrix()` \
+Reads a VMatrix from the buffer \
+Temporarily disabled, does not read nor return anything
+
+</details>
+
 ### Hooks
 
 <details>
