@@ -298,3 +298,40 @@ Forces the value of the convar to the given bool
 Forces the value of the convar to the given string
 
 </details>
+
+### Hooks
+
+<details>
+<summary>Hooks</summary>
+
+`PreFrameStageNotify(number Stage)` \
+Called before ClientDLL::FrameStageNotify \
+Stage enumerations are declared in _G.proxi as shown above
+
+`PostFrameStageNotify(number Stage)` \
+Called after ClientDLL::FrameStageNotify \
+Stage enumerations are declared in _G.proxi as shown above
+
+`DispatchEffect(string EffectName, CEffectData Effect)` \
+Called before an effect is activated \
+Return `true` to prevent the effect from being activated
+
+`CreateMoveEx(CUserCmd Command, bool SendPacket)` \
+Called after CreateMove inside updated prediction \
+First return value is a bool for whether or not to update engine view angles \
+Second return value is a bool for whether or not to choke the packet. proxi supports up to 21 choked ticks
+
+`SendStringCmd(string Command)` \
+Called whenever a concommand is ran on the client \
+Return `false` to prevent the command event from being sent to the server
+
+`ShouldSendLuaError(string Error)` \
+Called whenever a Lua error happens \
+Return `false` to prevent the error from being sent to the server \
+Return a string to change the error message to something else
+
+`OutgoingNetMessage(proxi_bf_read Buffer)` \
+Called before a net message is sent to the server \
+Return `false` to prevent the net message from being sent
+
+</details>
