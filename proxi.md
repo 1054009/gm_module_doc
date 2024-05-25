@@ -187,3 +187,29 @@ Same as _G.net.WriteMatrix \
 Temporarily disabled, does not write anything
 
 </details>
+
+### _R.Entity
+
+<details>
+<summary>Entity Additions</summary>
+
+`any GetDTNetVar(string NetVar, number Force)` \
+Returns a data entry from the entity's network variable datatable \
+The values for Force are:
+
+| Value | Type |
+| --- | --- |
+| 0 | Integer |
+| 1 | Float |
+| 2 | Vector |
+| 3 | Vector2 |
+| 4 | String |
+| 5 | Entity |
+
+`SetDTNetVar(string NetVar, any Value)` \
+Sets a data entry on the entity's network variable datatable to the given value
+
+`SetInterpolationEnabled(bool Enabled)` \
+Sets whether or not this entity should be interpolated
+
+</details>
