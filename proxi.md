@@ -106,3 +106,26 @@ Spoofs _G.CurTime to return the given number until the next tick
 Spoofs _G.FrameTime and _G.RealFrameTime to return the given number until the next tick
 
 </details>
+
+<details>
+<summary>Debug Lib (_G.proxi.debug)</summary>
+
+`string, any getupvalue(function Function, number Index)` \
+Same as _G.debug.getupvalue
+
+`string setupvalue(function Function, number Index, any Value)` \
+Same as _G.debug.setupvalue
+
+`string, any getlocal(thread Thread = CurrentThread, number Level, number Index)` \
+Same as _G.debug.getlocal
+
+`string setlocal(thread Thread = CurrentThread, number Level, number Index, any Value)` \
+Same as _G.debug.setlocal
+
+`table getinfo(function FunctionOrStackLevel, string Fields = "flnSu", function Function)` \
+Same as _G.debug.getinfo
+
+`table getmetatable(any Object)` \
+Same as _G.debug.getmetatable
+
+</details>
