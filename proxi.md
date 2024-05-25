@@ -44,7 +44,7 @@ For use in the FrameStagNotify hooks \
 Value of 6
 
 `DisableAnimInterp(bool Disable)` \
-Enables/Disables interpolate via CSequenceTransitioner::CheckForSequenceChange
+Enables/Disables interpolation via CSequenceTransitioner::CheckForSequenceChange
 
 `Disconnect(string DisconnectReason)` \
 Disconnects from the server with a custom message
